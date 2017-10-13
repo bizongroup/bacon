@@ -472,3 +472,11 @@ button {
 *:first-child {
   margin-top: 0;
 }
+
+/**
+ * Overflow container
+ */
+
+.overflow {
+  overflow-y: auto;
+}
