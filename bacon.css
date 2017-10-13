@@ -480,3 +480,17 @@ button {
 .overflow {
   overflow-y: auto;
 }
+
+/**
+ * 100% responsiveness for HTML elements.
+ */
+
+img,
+canvas,
+iframe,
+video,
+svg,
+select,
+textarea {
+  max-width: 100%;
+}
