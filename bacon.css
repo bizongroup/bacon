@@ -494,3 +494,11 @@ select,
 textarea {
   max-width: 100%;
 }
+
+/**
+ * Sometimes there are things that shouldn't be selectable.
+ */
+
+ .noselect {
+   user-select: none;
+ }
