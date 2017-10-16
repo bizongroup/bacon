@@ -1,6 +1,6 @@
 {
   "name": "bacon.css",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Custom CSS reset for 8-Point grid systeb. Inspired by Normalize.css.",
   "main": "bacon.css",
   "scripts": {
