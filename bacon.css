@@ -526,3 +526,11 @@ button {
 *:focus {
   outline: none;
 }
+
+/**
+ * 240px is 30 grid cells, by the way.
+ */
+
+body {
+  min-width: 240px;
+}
