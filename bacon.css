@@ -534,3 +534,13 @@ button {
 body {
   min-width: 240px;
 }
+
+/**
+ * More beautiful SVG.
+ */
+
+svg {
+  text-rendering: optimizeLegibility;
+  image-rendering: optimizeQuality;
+  shape-rendering: geometricPrecision;
+}
