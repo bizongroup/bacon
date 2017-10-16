@@ -432,16 +432,7 @@ html {
   -webkit-font-smoothing: antialiased; /* 2 */
 }
 
-/**
- * Looks great.
- */
-
-button {
-  cursor: pointer;
-}
-
-
-/* Box model resets for grid system
+/* Box model resets for grid system and some defaults
    ========================================================================== */
 
 /**
@@ -455,17 +446,8 @@ button {
 }
 
 /**
- * Some defaults.
- */
-
-button {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 8px;
-}
-
-/**
- * Every next element should push away from the previous one.
+ * 1. Every next element should push away from the previous one.
+ * 2. Disable margin folding
  */
 
 h1,
@@ -478,7 +460,9 @@ p,
 img,
 video,
 button {
-  margin-top: 16px;
+  display: inline-block;  /* 1 */
+  width: 100%;  /* 1 */
+  margin-top: 16px; /* 2 */
   margin-bottom: 0;
 }
 
@@ -518,4 +502,27 @@ textarea {
 
  .noselect {
    user-select: none;
+}
+
+/**
+ * Some defaults.
+ */
+
+button {
+  width: initial;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/**
+ * You HAVE to provide an alternative.
+ */
+
+*,
+*:hover,
+*:active,
+*:focus {
+  outline: none;
 }
