@@ -439,11 +439,18 @@ html {
  * Use grid instead.
  */
 
-* {
+html {
   box-sizing: border-box;
+}
+
+
+* {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
+
+
 
 /**
  * Every next element should push away from the previous one.
