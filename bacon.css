@@ -453,7 +453,8 @@ html {
 
 
 /**
- * Every next element should push away from the previous one.
+ * 1. Disable margin folding.
+ * 2. Every next element should push away from the previous one.
  */
 
 h1,
@@ -465,8 +466,12 @@ h6,
 p,
 img,
 video,
-button {
-  margin-top: 16px;
+audio,
+button,
+input {
+  display: inline-block; /* 1 */
+  width: 100%;
+  margin-top: 16px; /* 2 */
   margin-bottom: 0;
 }
 
@@ -474,17 +479,6 @@ button {
  * Disable margin folding.
  */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-button {
-  display: inline-block;
-  width: 100%;
-}
 
 /**
  * Elements shouldn't push away from the ceiling.
@@ -513,6 +507,7 @@ video,
 svg,
 select,
 textarea {
+  width: initial;
   max-width: 100%;
 }
 
